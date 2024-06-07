@@ -1,15 +1,25 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-Car car1 = new Car("SS", 2011);
-        Car car2 = new Car("Sa", 2012);
-        Car car3 = new Car("Se", 2013);
-        Car car4 = new Car("Sr", 2014);
-        Car car5 = new Car("Sy", 2015);
-        Car car6 = new Car("Su", 2016);
-        Car car7 = new Car("Sf", 2017);
-        Car car8 = new Car("Sg", 2018);
-        Car car9 = new Car("Sh", 2019);
-        Car car10 = new Car("Sj", 2020);
+            ArrayList<Car> cars = new ArrayList<>();
+            cars.add(new Car("Ss", 2010));
+            cars.add(new Car("Sd", 2011));
+            cars.add(new Car("Sf", 2015));
+            cars.add(new Car("Sg", 2022));
+            cars.add(new Car("Sh", 2001));
+            cars.add(new Car("Sj", 2003));
+            cars.add(new Car("Sk", 2005));
+            cars.add(new Car("Sl", 2000));
+            cars.add(new Car("Sm", 2009));
+            cars.add(new Car("Sc", 2012));
+
+            Collections.sort(cars);
+            for(Car car : cars){
+                    System.out.println(car);
+            }
     }
+
 }

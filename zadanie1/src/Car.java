@@ -3,20 +3,27 @@ import java.util.Collection;
 import java.util.List;
 
 
-public class Car implements Comparable{
+public class Car implements Comparable<Car> {
     public String nazwaModelu;
     public int rokProdukcji;
-    static List<Car> cars = new ArrayList<>();
+
 
     public Car(String nazwaModelu, int rokProdukcji) {
         this.nazwaModelu = nazwaModelu;
         this.rokProdukcji = rokProdukcji;
-        cars.add(this);
+
     }
 
-    @Override
-    public int sortCars(Car car) {
-        
 
+    @Override
+    public int compareTo(Car o) {
+        return Integer.compare(this.rokProdukcji, o.rokProdukcji);
+    }
+    @Override
+    public String toString() {
+        return "Car{" +
+                "nazwaModelu='" + nazwaModelu + '\'' +
+                ", rokProdukcji=" + rokProdukcji +
+                '}';
     }
 }
