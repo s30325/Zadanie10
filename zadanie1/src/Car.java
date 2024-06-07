@@ -6,7 +6,7 @@ import java.util.List;
 public class Car implements Comparable<Car> {
     public String nazwaModelu;
     public int rokProdukcji;
-
+ -m zadan
 
     public Car(String nazwaModelu, int rokProdukcji) {
         this.nazwaModelu = nazwaModelu;
